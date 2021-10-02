@@ -27,7 +27,7 @@ EH-mdServer: running at http://localhost:3030
 | --alias, -a | add a url alias (see below) |
 | --root, -r  | set the document root (defaults to cwd()) |
 | --style, -s | set the stylesheet url for Markdown files (see more below) |
-| --help, -s | display help |
+| --help, -h | display help |
 | --version | displays the server version |
 
 ## Document Root and URL Aliases
@@ -66,6 +66,6 @@ To solve this, use:
 
 ## Styling Rendered Markdown
 
-We add [simple CSS stylesheet](/md.css) to our rendered Markdown files. You can
-override this by providing a (relative or absolute) URL for your preferred
+We add a [simple CSS stylesheet](/md.css) to our rendered Markdown files. You
+can override this by providing a (relative or absolute) URL for your preferred
 stylesheet on the command line, such as `ehmdserver --style /static/my.css`.
