@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-// This file is part of microserver, Copyright (C) Todd D. Esposito 2021.
+// This file is part of EH-mdServer, Copyright (C) Todd D. Esposito 2021.
 // Distributed under the MIT License (see https://opensource.org/licenses/MIT).
 
 const fs = require('fs')
