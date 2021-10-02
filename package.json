@@ -1,0 +1,19 @@
+{
+  "name": "ehmdserver",
+  "version": "1.0.0",
+  "description": "A tiny webserver which serves HTML, CSS, JS, images, and converts MD to HTML on the fly",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Todd D. Esposito",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "showdown": "^1.9.1",
+    "yargs": "^17.2.1"
+  },
+  "bin": {
+    "ehmdserver": "./ehmdserver.js"
+  }
+}
