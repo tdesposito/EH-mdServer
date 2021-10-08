@@ -66,8 +66,8 @@ docLocations.push({
 })
 
 
-function logRequest(req, code) {
-  console.log(`[${code}] ${req.method} ${req.url}`)
+function logRequest(req, rsp) {
+  console.log(`${req.socket.remoteAddress} - - "${req.method} ${req.url}" ${rsp.statusCode}`)
 }
 
 
@@ -100,7 +100,7 @@ function resolveUrl(url) {
 function sendError(req, rsp, code, title, message) {
   rsp.writeHead(code, {'Content-Type': 'text/html'})
   rsp.end(`<html><body><h1>${code} ${title}</h1><p>${message}</p></body</html>`)
-  logRequest(req, code)
+  logRequest(req, rsp)
   return true
 }
 
@@ -133,7 +133,7 @@ function sendFile(req, rsp, path) {
     }
   )
   rsp.end(body)
-  logRequest(req, 200)
+  logRequest(req, rsp)
 
   return true
 }
@@ -155,7 +155,7 @@ function sendMarkdown(req, rsp, path) {
     }
   )
   rsp.end(html)
-  logRequest(req, 200)
+  logRequest(req, rsp)
 
   return true
 }
