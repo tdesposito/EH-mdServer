@@ -2,7 +2,7 @@
   "name": "ehmdserver",
   "version": "1.0.1",
   "description": "A tiny webserver which serves HTML, CSS, JS, images, and converts MD to HTML on the fly",
-  "main": "index.js",
+  "main": "ehmdserver.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
