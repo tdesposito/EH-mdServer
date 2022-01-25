@@ -99,7 +99,7 @@ function resolveUrl(url) {
 
 function sendError(req, rsp, code, title, message) {
   rsp.writeHead(code, {'Content-Type': 'text/html'})
-  rsp.end(`<html><body><h1>${code} ${title}</h1><p>${message}</p></body</html>`)
+  rsp.end(`<html><body><h1>${code} ${title}</h1><p>${message}</p></body></html>`)
   logRequest(req, rsp)
   return true
 }
