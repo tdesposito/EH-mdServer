@@ -1,5 +1,7 @@
 # Markdown Sample
 
+See also the [ehMDserver README](README.md)
+
 ---
 
 # h1 Heading 8-)

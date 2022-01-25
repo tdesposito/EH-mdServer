@@ -5,18 +5,27 @@ development.
 
 ## Installation
 
+Install globally with NPM:
+
 ```console
-$ git clone https://github.com/tdesposito/EH-mdServer.git
-$ cd EH-mdServer
-$ npm install
-$ npm link
+npm install -g ehmdserver
+```
+
+Or, clone the repository and link it:
+
+```console
+git clone https://github.com/tdesposito/EH-mdServer.git
+cd EH-mdServer
+npm install
+npm link
 ```
 
 ## Usage
+
 ```console
 $ cd /my/project/dir
 $ ehmdserver --port 3030 --root ./docs --alias /src ./src
-EH-mdServer: running at http://localhost:3030
+ehMDserver: running at http://localhost:3030
 ```
 
 ## Command Line Options
@@ -31,6 +40,7 @@ EH-mdServer: running at http://localhost:3030
 | --version | displays the server version |
 
 ## Document Root and URL Aliases
+
 By default, we look for all files in the current directory (where you started
 the server, not where the server is installed).
 
@@ -43,7 +53,7 @@ aliases to map URL prefixes to alternate file locations.
 
 A common project might look like:
 
-```
+```text
 /projectdir
   +- /src
      |- index.js
@@ -69,3 +79,5 @@ To solve this, use:
 We add a [simple CSS stylesheet](/md.css) to our rendered Markdown files. You
 can override this by providing a (relative or absolute) URL for your preferred
 stylesheet on the command line, such as `ehmdserver --style /static/my.css`.
+
+* Credit to [Chris Patuzzo](https://twitter.com/chrispatuzzo) for the CSS.
