@@ -6,6 +6,13 @@ All notable changes to this project will be documented in this file.
 * This project adheres to [Semantic Versioning](https://semver.org/)
 * This project uses [cvbump](https://github.com/tdesposito/ChangelogVersionTool) to maintain this changelog.
 
+## [1.1.1](https://github.com/tdesposito/EH-mdServer/releases/tag/v1.1.0) - 2022-01-28
+
+### Fixed
+
+* Fixed interface - now binds to 0.0.0.0 ([8a55225](https://github.com/tdesposito/EH-mdServer/commit/8a55225d2c9f325a8c59a2a455a677b9c60b24e1) by Todd Esposito)
+* fix typo in sendError() ([40b6082](https://github.com/tdesposito/EH-mdServer/commit/40b60821d9b15830791362daca3f24bcb158b5be) by Todd D. Esposito)
+
 ## [1.1.0](https://github.com/tdesposito/EH-mdServer/releases/tag/v1.1.0) - 2022-01-25
 
 ### Added
