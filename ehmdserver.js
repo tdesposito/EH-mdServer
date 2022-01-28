@@ -171,6 +171,6 @@ const server = http.createServer((req, rsp) => {
   return resolvePath(req, rsp, resolveUrl(req.url))
 })
 
-server.listen(argv.port, "localhost", () => {
+server.listen(argv.port, "0.0.0.0", () => {
    console.log(`ehMDserver: running at http://localhost:${argv.port}/`)
 })
